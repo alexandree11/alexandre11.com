@@ -69,9 +69,36 @@
         //sun
         ctx.beginPath();
         ctx.arc(1080, 144, 60, 60, Math.PI * 2, true);
-        ctx.moveTo(110, 75);
         ctx.fillStyle = "rgb(255 223 34)";
         ctx.fill();
+
+        //sunlights
+        ctx.beginPath();
+        ctx.fillStyle = "rgb(0 0 0)";
+        ctx.moveTo(1040, 144);  //to the left
+        ctx.lineTo(1000, 144);
+        ctx.fill();
+
+        ctx.moveTo(1120, 144);  //to the right
+        ctx.lineTo(1160, 144);
+
+        ctx.moveTo(1080, 104);  //to the top
+        ctx.lineTo(1080, 64);
+
+        ctx.moveTo(1080, 184);  //to the bottom
+        ctx.lineTo(1080, 224);
+
+        ctx.moveTo(1040, 104);  //to the top left
+        ctx.lineTo(1000, 64);
+
+        ctx.moveTo(1120, 104);  //to the top right
+        ctx.lineTo(1160, 64);
+
+        ctx.moveTo(1040, 184);  //to the bottom left
+        ctx.lineTo(1000, 224);
+
+        ctx.moveTo(1120, 184);  //to the bottom right
+        ctx.lineTo(1160, 224);
 
         //extra (grass,fence,rock, etc)
 
