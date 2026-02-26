@@ -1,28 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<style>
-body {
-  background-color: cyan;
-}
+  <head>
+    <title>Cartoon</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        para1{
+            color: black;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 20;
+        }
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="1280" height="720"></canvas>
+    <script>
+      function draw(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
 
-h1 {
-  color: rgb(128,128,128);
-  text-align: center;
-}
+        //header
+        ctx.font = "30px courier new";
+        ctx.fillText("Cartoon", 535, 25);
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
+        //background
+        ctx.fillStyle = "rgb(0 255 255)";
+        ctx.fillRect(0, 30, 1280, 540);
 
-<h1>Cartoon project</h1>
-<p>This is a paragraph.</p>
+        //ground
+        ctx.fillStyle = "rgb(0 192 0)";
+        ctx.fillRect(0, 570, 1280, 150)
 
-</body>
+        //house base
+        ctx.fillStyle = "rgb(193 154 107)";
+        ctx.fillRect(111, 300, 500, 350);
+
+        //house roof
+        ctx.fillStyle = "rgb(128 128 128)";
+        ctx.beginPath();
+        ctx.moveTo(46, 300);
+        ctx.lineTo(676, 300);
+        ctx.lineTo(361, 150);
+        ctx.fill();
+
+        //windows
+        ctx.fillStyle = "rgb(187 249 255)";
+        ctx.fillRect(151, 422, 90, 130);
+        ctx.strokeRect(151, 422, 90, 130);
+        
+        ctx.fillStyle = "rgb(187 249 255)";
+        ctx.fillRect(481, 422, 90, 130);
+        ctx.strokeRect(481, 422, 90, 130);
+
+        //door
+        ctx.fillStyle = "rgb(86 50 50)";
+        ctx.fillRect(305.5, 411, 111, 239);
+        ctx.strokeRect(305.5, 411, 111, 239);
+
+        //sun
+        ctx.beginPath();
+        ctx.arc(1080, 144, 60, 60, Math.PI * 2, true);
+        ctx.moveTo(110, 75);
+        ctx.fillStyle = "rgb(255 223 34)";
+        ctx.fill();
+
+        //extra (grass,fence,rock, etc)
+
+      }
+      draw();
+    </script>
+    <para1> 
+        <br>
+        <a href = "https://alexandree11.github.io/"> Back to main page </a>
+        </br>
+    </para1>
+  </body>
 </html>
-
-
