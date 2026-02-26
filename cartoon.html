@@ -23,7 +23,12 @@
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
+        //header background
+        ctx.fillStyle = "rgb(255 255 255)";
+        ctx.fillRect(0, 0, canvas.width, 30);
+        
         //header
+        ctx.fillStyle = "rgb(0 0 0)";
         ctx.font = "30px courier new";
         ctx.fillText("Cartoon", 535, 25);
 
