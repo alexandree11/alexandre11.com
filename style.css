@@ -6,6 +6,7 @@ body {
 h1 {
   color: "cyan";
   font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
 }
 
 h2 {
