@@ -1,7 +1,14 @@
 body {
-  background-color: #f0f0f0;
-  font-family: 'Courier New', monospace;
+  background-color: "black";
+  font-family: 'Courier New', Courier, monospace;
 }
+
 h1 {
-  color: #1a73e8;
+  color: "cyan";
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  color: "cyan";
+  font-family: 'Courier New', Courier, monospace;
 }
