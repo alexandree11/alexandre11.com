@@ -4,10 +4,10 @@
     <title>Cartoon</title>
     <style>
         body{
-            background-color: white;
+            background-color: rgb(36, 36, 36);
         }
         para1{
-            color: black;
+            color: rgb(255, 255, 255);
             font-family:'Courier New', Arial, monospace;
             font-size: 20;
         }
@@ -80,12 +80,19 @@
         let centerX = 1080;
         let centerY = 144;
         let radius = 60;
+        
         //sun
+        ctx.shadowColor = "yellow";   //shadow settings for shining effect
+        ctx.shadowBlur = 40;
+        
+        ctx.fillStyle = "rgb(255 223 34)";
         ctx.beginPath();
         ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgb(255 223 34)";
         ctx.fill();
-        ctx.closePath();
+
+        //resetting shadow seetings
+        ctx.shadowColor = "transparent";
+        ctx.shadowBlur = 0;
 
         //sunlights
         ctx.strokeStyle = "rgb(255 223 34)";
@@ -100,7 +107,6 @@
           ctx.stroke();
           ctx.rotate(Math.PI/5);
         }
-
         ctx.restore();
       }
 
@@ -152,7 +158,7 @@
 
         //the ad on the screen
         ctx.fillStyle = "rgb(0 0 0)";
-        ctx.font = "60px brush script mt";
+        ctx.font = "45px Copperplate, Papyrus, fantasy";
         var screenFrameX = 835;
         var screenFrameY = 386;
         var line = 1;
