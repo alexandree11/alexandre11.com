@@ -8,7 +8,7 @@
         }
         para1{
             color: black;
-            font-family:'Courier New', Courier, monospace;
+            font-family:'Courier New', Arial, monospace;
             font-size: 20;
         }
         canvas{
@@ -93,13 +93,12 @@
         ctx.save();
         ctx.translate(centerX, centerY);
         // ctx.rotate(sunSpeed);
-
-        for(let i = 0; i < 8; i++){
+        for(let i = 0; i < 10; i++){
           ctx.beginPath();
           ctx.moveTo(radius+10, 0);  //to the left
           ctx.lineTo(radius+40, 0);
           ctx.stroke();
-          ctx.rotate(Math.PI/4);
+          ctx.rotate(Math.PI/5);
         }
 
         ctx.restore();
