@@ -19,7 +19,7 @@
   <body>
     <canvas id="canvas" width="1280" height="720"></canvas>
     <script>
-      function draw(){
+      function drawBase(){
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
@@ -39,7 +39,11 @@
         //ground
         ctx.fillStyle = "rgb(0 192 0)";
         ctx.fillRect(0, 570, 1280, 150)
+      }
 
+      function drawHouse(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
         //house base
         ctx.fillStyle = "rgb(193 154 107)";
         ctx.fillRect(111, 300, 500, 350);
@@ -53,6 +57,8 @@
         ctx.fill();
 
         //windows
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "rgb(0 0 0)";
         ctx.fillStyle = "rgb(187 249 255)";
         ctx.fillRect(151, 422, 90, 130);
         ctx.strokeRect(151, 422, 90, 130);
@@ -65,45 +71,119 @@
         ctx.fillStyle = "rgb(86 50 50)";
         ctx.fillRect(305.5, 411, 111, 239);
         ctx.strokeRect(305.5, 411, 111, 239);
+      }
 
+      // let sunSpeed = 0;
+      function drawSun(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        let centerX = 1080;
+        let centerY = 144;
+        let radius = 60;
         //sun
         ctx.beginPath();
-        ctx.arc(1080, 144, 60, 60, Math.PI * 2, true);
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
         ctx.fillStyle = "rgb(255 223 34)";
         ctx.fill();
+        ctx.closePath();
 
         //sunlights
-        ctx.beginPath();
-        ctx.fillStyle = "rgb(0 0 0)";
-        ctx.moveTo(1040, 144);  //to the left
-        ctx.lineTo(1000, 144);
-        ctx.fill();
+        ctx.strokeStyle = "rgb(255 223 34)";
+        ctx.lineWidth = 3;
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        // ctx.rotate(sunSpeed);
 
-        ctx.moveTo(1120, 144);  //to the right
-        ctx.lineTo(1160, 144);
+        for(let i = 0; i < 8; i++){
+          ctx.beginPath();
+          ctx.moveTo(radius+10, 0);  //to the left
+          ctx.lineTo(radius+40, 0);
+          ctx.stroke();
+          ctx.rotate(Math.PI/4);
+        }
 
-        ctx.moveTo(1080, 104);  //to the top
-        ctx.lineTo(1080, 64);
-
-        ctx.moveTo(1080, 184);  //to the bottom
-        ctx.lineTo(1080, 224);
-
-        ctx.moveTo(1040, 104);  //to the top left
-        ctx.lineTo(1000, 64);
-
-        ctx.moveTo(1120, 104);  //to the top right
-        ctx.lineTo(1160, 64);
-
-        ctx.moveTo(1040, 184);  //to the bottom left
-        ctx.lineTo(1000, 224);
-
-        ctx.moveTo(1120, 184);  //to the bottom right
-        ctx.lineTo(1160, 224);
-
-        //extra (grass,fence,rock, etc)
-
+        ctx.restore();
       }
-      draw();
+
+      function drawGrass(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.save();
+        ctx.translate(0, 575);
+
+        ctx.strokeStyle = "rgb(0 144 0)";
+        ctx.lineWidth = 2;
+        
+        let grassDistance = 5 + (Math.random() * 5);
+
+        for(let grassPosX = 0; grassPosX < canvas.width; grassPosX += grassDistance){
+          let grassAngle = (Math.random() * 7) -3;
+          let grassHeight = 12 + (Math.random() * 12);
+          grassDistance = 2 + (Math.random() * 4);
+          if(grassPosX > 111 && grassPosX < 611)
+            continue;
+          ctx.beginPath();
+          ctx.moveTo(grassPosX, 0);
+          ctx.lineTo(grassPosX + grassAngle, -grassHeight);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function billboard(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        
+        //left foot
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "rgb(0 0 0)";
+        ctx.strokeRect(880, 510, 10, 60);
+        ctx.fillStyle = "rgb(86 50 50)";
+        ctx.fillRect(880, 510, 10, 60);
+
+        //right foot
+        ctx.strokeRect(1000, 510, 10, 60);
+        ctx.fillRect(1000, 510, 10, 60);
+
+        //the screen (240x144)
+        ctx.fillRect(820, 366, 240, 144);
+        ctx.fillStyle = "rgb(255 255 255)";
+        ctx.fillRect(825, 371, 230, 134);
+
+        //the ad on the screen
+        ctx.fillStyle = "rgb(0 0 0)";
+        ctx.font = "60px brush script mt";
+        var screenFrameX = 835;
+        var screenFrameY = 386;
+        var line = 1;
+        var height = 30;
+        ctx.fillText("This could", screenFrameX, screenFrameY + (line*height));
+        line++;
+        ctx.fillText("be your ad", screenFrameX, screenFrameY + (line*height));
+        line++;
+      }
+
+/*       function animate(){
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        sunSpeed += .004;
+
+        drawHouse();
+        drawSun();
+        drawGrass();
+        requestAnimationFrame(animate);
+      } */
+
+      drawBase();
+      drawHouse();
+      drawGrass();
+      drawSun();
+      billboard();
+      
+      // animate();
     </script>
     <para1> 
         <br>
