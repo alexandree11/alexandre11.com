@@ -16,6 +16,13 @@ h1 {
 h2 {
   color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}
+
+#backButton {
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 
 body:link {
