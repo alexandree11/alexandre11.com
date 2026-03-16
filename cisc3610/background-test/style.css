@@ -35,10 +35,27 @@ h2 {
   font-size: 24px;
 }
 
-#backButton {
+.back-btn {
   color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
+  text-decoration: none;
+
+  background-color: #00eeff;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  padding: 6px 8px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+
+.back-btn:hover {
+  background-color: #555555;
+  color: white;
 }
 
 body:link {
