@@ -1,9 +1,17 @@
 body {
-  background-color: transparent;
+  background: linear-gradient(-45deg, #ff6a00, #ee0979, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   font-family: 'Courier New', Courier, monospace;
   color: rgb(0, 0, 0);
   font-size: 22px;
   text-decoration: none;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1 {
