@@ -5,6 +5,14 @@ html, body {
   overflow: hidden;
 }
 
+body {
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  text-decoration: none;
+}
+
 .background {
   position: fixed;
   width: 100%;
@@ -12,14 +20,14 @@ html, body {
   z-index: -1;
 
   background:
-    radial-gradient(circle at 20% 30%, #ff6a00, transparent 50%),
-    radial-gradient(circle at 70% 40%, #ee0979, transparent 50%),
-    radial-gradient(circle at 40% 70%, #6a11cb, transparent 50%),
-    radial-gradient(circle at 80% 80%, #2575fc, transparent 50%);
+    radial-gradient(circle at 20% 30%, #ff6a00, transparent 60%),
+    radial-gradient(circle at 70% 40%, #ee0979, transparent 60%),
+    radial-gradient(circle at 40% 70%, #6a11cb, transparent 60%),
+    radial-gradient(circle at 80% 80%, #2575fc, transparent 60%);
 
   filter: blur(120px); /* THIS creates the soft blob look */
 
-  animation: moveBg 20s ease-in-out infinite alternate;
+  animation: moveBg 10s ease-in-out infinite alternate;
 }
 
 @keyframes moveBg {
@@ -32,13 +40,6 @@ html, body {
   100% {
     background-position: 25% 35%, 75% 30%, 35% 75%, 85% 85%;
   }
-}
-
-body {
-  font-family: 'Courier New', Courier, monospace;
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  text-decoration: none;
 }
 
 @keyframes gradientBG {
