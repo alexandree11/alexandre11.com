@@ -20,11 +20,11 @@ body {
 
   background-color:#460080;
   background-image: 
-    radial-gradient(at 80% 20%, rgba(255, 0, 123, 0.4) 0%, transparent 50%),
-    radial-gradient(at 40% 80%, rgba(0, 174, 255, 0.3) 0%, transparent 50%);
+    radial-gradient(at 80% 20%, rgb(88, 0, 44) 0%, transparent 80%),
+    radial-gradient(at 40% 80%, rgb(0, 44, 88) 0%, transparent 80%);
   
   background-size: 200% 200%;
-  animation: moveBg 4s ease infinite alternate;
+  animation: moveBg 15s ease infinite alternate;
 }
 
 @keyframes moveBg {
