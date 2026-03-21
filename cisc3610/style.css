@@ -1,9 +1,25 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
 body {
-  background-color: transparent;
+  background: linear-gradient(-45deg, #008881, #870041, #410087, #000000);
+  background-size: 400% 100%; /* width 4×, height = viewport */
+  background-repeat: no-repeat;
+  animation: gradientBG 30s linear infinite;
+
   font-family: 'Courier New', Courier, monospace;
   color: rgb(0, 0, 0);
   font-size: 22px;
   text-decoration: none;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1 {
@@ -14,15 +30,58 @@ h1 {
 }
 
 h2 {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 183, 255);
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
 }
 
-#backButton {
-  color: rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
+.back-btn {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #00eeff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px;
+  width: 80px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10 px;
+}
+
+.back-btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.back-btn span:after {
+  content: '\27ea';
+  position: absolute;
+  opacity: 0;
+  left: -10px;
+  transition: 0.5s;
+}
+
+.back-btn:hover span {
+  padding-left: 10px;
+}
+
+.back-btn:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.back-btn:link {
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  text-decoration: none;
 }
 
 body:link {
