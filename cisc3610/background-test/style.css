@@ -36,26 +36,48 @@ h2 {
 }
 
 .back-btn {
-  color: rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
-  text-decoration: none;
-
-  background-color: #00eeff;
-  border: 1px solid #888888;
-  border-radius: 8px;
-  padding: 6px 8px;
-  text-align: center;
   display: inline-block;
-  margin: 4px 2px;
+  border-radius: 8px;
+  background-color: #00eeff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
   cursor: pointer;
+}
 
-  transition-duration: 0.4s;
+.back-btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.back-btn span:after {
+  content: '\27ea';
+  position: absolute;
+  opacity: 0;
+  left: -10px;
+  transition: 0.5s;
+}
+
+.back-btn:hover span {
+  padding-left: 10px;
+}
+
+.back-btn:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.back-btn:link {
+  text-decoration: none;
 }
 
 .back-btn:hover {
-  background-color: #555555;
-  color: white;
+  text-decoration: none;
 }
 
 body:link {
