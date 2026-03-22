@@ -115,3 +115,11 @@ body:hover {
 body:active{
   color: rgb(0, 0, 0);
 }
+
+#showSentence {
+  width: 80%;
+  max-width: 400%;
+  height: 36px;
+  padding: 5px;
+  resize: none;
+}
