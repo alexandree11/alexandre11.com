@@ -8,7 +8,7 @@
     function updateSelection() {
       // 1. Find the Menu and the Textarea by their IDs
       const menu = document.getElementById('wordSelector');
-      const display = document.getElementById('sentenceDisplay');
+      const display = document.getElementById('showSentence');
 
       // 2. The Gatekeeper: Only run if they didn't pick "--Select--" (Index 0)
       if (menu.selectedIndex > 0) {
@@ -40,7 +40,7 @@
       }
       else if (type === 'sentence') {
         // Look in the Textarea
-        const display = document.getElementById('sentenceDisplay');
+        const display = document.getElementById('showSentence');
         textToSay = display.value;
       }
 
