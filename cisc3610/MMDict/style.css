@@ -119,7 +119,7 @@ body:active{
 .card-body textarea {
   width: 80%;
   max-width: 400%;
-  height: 120px;
+  height: 100px;
   margin-top: 20px;
   resize: none;
   font-size: 18px;
