@@ -19,24 +19,39 @@
   <div class="container">
     <div class="page-title text-center">Multimedia Dictionary</div>
     <div class="wordSelection">
-      <select id="wordSelector" onchange="updateSelection()">
-        <option value="">-- Select a word --</option>
-        <option data-sentence="A feeling of self-assurance arising from one's appreciation of one's own abilities or qualities.">Confidence</option>
-        <option data-sentence="A strong feeling of support or allegiance to a person, group, institution, or set of beliefs.">Loyalty</option>
-        <option data-sentence="The process of growing, progressing, or becoming more advanced and mature.">Developing</option>
-        <option data-sentence="A cherished aspiration, ambition, or ideal.">Dream</option>
-        <option data-sentence="The quality of being fair and reasonable; the administration of law or authority in maintaining this.">Justice</option>
-      </select>
-      <button onclick="speakContents('word')"><i class="bi bi-megaphone"></i></button>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card bg-info text-black">
+            <div class="card-body">
+              <h4 class="card-title text-center">
+                <select id="wordSelector" onchange="updateSelection()">
+              </h4>
+              <h6 class="card-body text-center">
+                <option value="">-- Select a word --</option>
+                <option
+                  data-sentence="A feeling of self-assurance arising from one's appreciation of one's own abilities or qualities.">
+                  Confidence</option>
+                <option
+                  data-sentence="A strong feeling of support or allegiance to a person, group, institution, or set of beliefs.">
+                  Loyalty</option>
+                <option data-sentence="The process of growing, progressing, or becoming more advanced and mature.">
+                  Developing</option>
+                <option data-sentence="A cherished aspiration, ambition, or ideal.">Dream</option>
+                <option
+                  data-sentence="The quality of being fair and reasonable; the administration of law or authority in maintaining this.">
+                  Justice</option>
+                </select>
+                <br><textarea id="showSentence" class="form-control w-100"
+                  style="height: 80px">Select a word to see the sentence</textarea><br>
+                <button onclick="speakContents('word')">Speak word</i></button>
+                <button onclick="speakContents('sentence')">Speak sentence</button>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="sentenceDisplay">
-      <br><textarea id="showSentence" readonly>Select a word to see the sentence</textarea>
-      <button onclick="speakContents('sentence')"><i class="bi bi-megaphone"></i></button>
-    </div>
-
   </div>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
