@@ -18,10 +18,10 @@ body {
   height: 100%;
   z-index: -1;
 
-  background-color:#460080;
+  background-color:#2200ff;
   background-image: 
-    radial-gradient(at 80% 20%, rgb(88, 0, 44) 0%, transparent 80%),
-    radial-gradient(at 40% 80%, rgb(0, 44, 88) 0%, transparent 80%);
+    radial-gradient(at 80% 20%, rgb(255, 0, 128) 0%, transparent 90%),
+    radial-gradient(at 40% 80%, rgb(0, 255, 255) 0%, transparent 90%);
   
   background-size: 200% 200%;
   animation: moveBg 15s ease infinite alternate;
