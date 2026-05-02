@@ -120,7 +120,6 @@ h1 {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 20px;
-  /* Sets the spacing between all boxes */
 }
 
 .portfolio-grid .card {
