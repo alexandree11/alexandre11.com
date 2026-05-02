@@ -110,7 +110,7 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
-
+  align-items: start;
   gap: 20px;
   margin: 0 auto;
   padding: 0 25px;
