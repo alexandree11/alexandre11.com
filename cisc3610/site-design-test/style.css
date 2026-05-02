@@ -119,7 +119,10 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
+
   gap: 20px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .portfolio-grid .card {
