@@ -127,5 +127,5 @@ h1 {
     margin-left: 32px;
     
     /* Important: This ensures the margin-top actually works */
-    display: block;      
+    display: contents;      
 }
