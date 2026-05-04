@@ -160,3 +160,7 @@ h1 {
   /* Optional: Add a soft shadow for depth */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.title-font {
+  font-family: Copperplate, Papyrus, fantasy;
+}
