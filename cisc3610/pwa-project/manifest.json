@@ -1,24 +1,25 @@
-"mythology": [
-    {
-        "id": ,
-        "title": ,
-        "description": ,
-        "image": ,
-        "audio": 
-    },
-    {
-        "id": ,
-        "title": ,
-        "description": ,
-        "image": ,
-        "audio": 
-    },
-    {
-        "id": ,
-        "title": ,
-        "description": ,
-        "image": ,
-        "audio": 
-    }
-]
+{
+	"mythology": [
+		{
+			"id": ,
+			"title": ,
+			"description": ,
+			"image": ,
+			"audio":
+		},
+		{
+			"id": ,
+			"title": ,
+			"description": ,
+			"image": ,
+			"audio":
+		},
+		{
+			"id": ,
+			"title": ,
+			"description": ,
+			"image": ,
+			"audio":
+		}
+	]
 }
