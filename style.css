@@ -120,9 +120,3 @@ h1 {
   flex: 0 0 300px;        /* Sets a consistent width for your cards */
   max-width: 300px;
 }
-
-#cartoon-canvas {
-    /* Adding top and left margins */
-    margin-top: 32px;
-    margin-left: 32px;   
-}
