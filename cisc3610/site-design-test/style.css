@@ -162,7 +162,7 @@ h1 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-                              a/* cartoon project page settings */
+                              /* cartoon project page settings */
 #cartoon-canvas {
   /* Adding top and left margins */
   margin-top: 44px;
@@ -170,4 +170,19 @@ h1 {
 
   /* Important: This ensures the margin-top actually works */
   display: block;
+}
+
+                              /* mythology notes style */
+.myth-notes {
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+                              /* video player position settings */
+.video-container {
+  display: flex;
+  justify-content: center; /* This centers the content horizontally */
+  width: 80%;             /* Ensures the container spans the full width */
 }
