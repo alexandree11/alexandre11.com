@@ -129,3 +129,24 @@ h1 {
     /* Important: This ensures the margin-top actually works */
     display: block;      
 }
+
+.glass-card {
+  /* margins between the text and the card borders*/
+  padding: 10px;
+
+  /* Transparent background with a slight white tint */
+  background: rgba(255, 255, 255, 0.2);
+
+  /* The "Frosted" effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* Required for Safari */
+
+  /* Subtle border to define the glass edge */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  /* Rounded corners look better for glass */
+
+  /* Optional: Add a soft shadow for depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
