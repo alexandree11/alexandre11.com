@@ -1,38 +1,49 @@
-/* Делает всю прокрутку страницы плавной */
+/* Плавный скролл */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-/* Фиксированное меню сверху */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5; /* Цвет фона всей страницы */
+}
+
+/* Навигация */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-  display: flex;
-  gap: 20px;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
 }
 
-/* Отступ сверху, чтобы контент не перекрывался меню */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Блоки контента */
 .content-block {
-  padding-top: 80px; 
-  padding-bottom: 40px;
-  max-width: 800px;
-  margin: 0 auto;
+    padding-top: 80px; /* Отступ от верха, чтобы контент не был под меню */
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    scroll-margin-top: 60px; /* Корректировка точки остановки скролла */
 }
 
-/* Картинка над текстом */
 .content-block img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
 }
 
-/* Фон для текстового блока */
 .text-container {
-  background: rgba(240, 240, 240, 0.8);
-  padding: 20px;
-  border-radius: 0 0 10px 10px;
-  margin-top: -5px; /* Соединяет картинку с фоном */
+    background: white; /* Фон для текста */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
