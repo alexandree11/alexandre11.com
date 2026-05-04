@@ -123,8 +123,8 @@ h1 {
 
 #cartoon-canvas {
     /* Adding top and left margins */
-    margin-top: 44px;
-    margin-left: 32px;
+    margin-top: auto;
+    margin-left: auto;
     
     /* Important: This ensures the margin-top actually works */
     display: block;      
