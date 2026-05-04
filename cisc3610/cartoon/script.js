@@ -1,5 +1,5 @@
 function drawBase() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("cartoon-canvas");
     const ctx = canvas.getContext("2d");
 
     //header background
