@@ -21,7 +21,7 @@ function drawBase() {
 }
 
 function drawHouse() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("cartoon-canvas");
     const ctx = canvas.getContext("2d");
     //house base
     ctx.fillStyle = "rgb(193 154 107)";
@@ -54,7 +54,7 @@ function drawHouse() {
 
 // let sunSpeed = 0;
 function drawSun() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("cartoon-canvas");
     const ctx = canvas.getContext("2d");
     let centerX = 1080;
     let centerY = 144;
@@ -90,7 +90,7 @@ function drawSun() {
 }
 
 function drawGrass() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("cartoon-canvas");
     const ctx = canvas.getContext("2d");
 
     ctx.save();
@@ -116,7 +116,7 @@ function drawGrass() {
 }
 
 function billboard() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("cartoon-canvas");
     const ctx = canvas.getContext("2d");
 
     //left foot
@@ -149,7 +149,7 @@ function billboard() {
 }
 
 /*       function animate(){
-        const canvas = document.getElementById("canvas");
+        const canvas = document.getElementById("cartoon-canvas");
         const ctx = canvas.getContext("2d");
  
         ctx.clearRect(0, 0, canvas.width, canvas.height);
