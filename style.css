@@ -183,6 +183,6 @@ h1 {
                               /* video player position settings */
 .video-container {
   display: flex;
-  justify-content: center; /* This centers the content horizontally */a
+  justify-content: center; /* This centers the content horizontally */
   width: 80%;             /* Ensures the container spans the full width */
 }
