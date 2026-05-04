@@ -6,7 +6,8 @@ html {
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f0f2f5; /* Цвет фона всей страницы */
+    background-color: #f0f2f5;
+    /* Цвет фона всей страницы */
 }
 
 /* Навигация */
@@ -29,10 +30,12 @@ body {
 
 /* Блоки контента */
 .content-block {
-    padding-top: 80px; /* Отступ от верха, чтобы контент не был под меню */
+    padding-top: 80px;
+    /* Отступ от верха, чтобы контент не был под меню */
     max-width: 800px;
     margin: 0 auto 50px auto;
-    scroll-margin-top: 60px; /* Корректировка точки остановки скролла */
+    scroll-margin-top: 60px;
+    /* Корректировка точки остановки скролла */
 }
 
 .content-block img {
@@ -42,8 +45,53 @@ body {
 }
 
 .text-container {
-    background: white; /* Фон для текста */
+    background: white;
+    /* Фон для текста */
     padding: 20px;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* back button settings */
+/* Настройка фиксированного меню */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Стили вашей кнопки */
+.back-btn {
+    background-color: transparent;
+    /* Убираем фон */
+    border: 1px solid white;
+    /* Рамка */
+    color: white;
+    /* Цвет текста */
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-right: auto;
+    /* Прижимает кнопку к левому краю */
+}
+
+.back-btn:hover {
+    background-color: white;
+    color: #333;
+    /* Эффект при наведении */
+}
+
+/* Ссылки справа */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
 }
