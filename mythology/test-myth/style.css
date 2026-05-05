@@ -6,8 +6,24 @@ html {
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f0f2f5;
-    /* Цвет фона всей страницы */
+    /* The image file */
+    background-image: url('myth_background.png');
+    
+    /* This makes it a full-screen background */
+    background-size: cover;
+    
+    /* This centers the image */
+    background-position: center;
+    
+    /* The trick for the "slow" scroll effect */
+    background-attachment: fixed;
+    
+    /* Prevents the image from repeating */
+    background-repeat: no-repeat;
+    
+    /* Ensures the background covers everything */
+    background-color: #000; 
+}
 }
 
 /* Навигация */
