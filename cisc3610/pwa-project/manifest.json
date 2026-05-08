@@ -1,25 +1,19 @@
 {
 	"mythology": [
 		{
-			"id": ,
-			"title": ,
-			"description": ,
-			"image": ,
-			"audio":
+			"id": "myth-001",
+			"title": "The creation myth",
+			"description": "the creation of humanity"
 		},
 		{
-			"id": ,
-			"title": ,
-			"description": ,
-			"image": ,
-			"audio":
+			"id": "myth-002",
+			"title": "Love and Death",
+			"description": "Myths about love and death"
 		},
 		{
-			"id": ,
-			"title": ,
-			"description": ,
-			"image": ,
-			"audio":
+			"id": "myth-003",
+			"title": "Flood myths",
+			"description": "Myths about flood"
 		}
 	]
 }
