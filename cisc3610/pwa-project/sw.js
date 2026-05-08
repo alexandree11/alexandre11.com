@@ -1,10 +1,10 @@
 const CACHE_NAME = 'mytho-v1';
 const ASSETS = [
-  '/',                // The root URL (usually index.html)
-  '/index.html',      // Your main app structure
-  '/style.css',      // Your visual design (styling)
-  '/app.js',          // Your core logic (the engine)
-  '/manifest.json',   // Your PWA metadata (icons, colors, etc)
+  './',                // The root URL (usually index.html)
+  'index.html',      // Your main app structure
+  'style.css',      // Your visual design (styling)
+  'app.js',          // Your core logic (the engine)
+  'manifest.json',   // Your PWA metadata (icons, colors, etc)
   // ... your media below
 ];
 
