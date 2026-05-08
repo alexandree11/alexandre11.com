@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
 document.addEventListener('DOMContentLoaded', () => {
     
     // 2. Fetch the JSON data
-    fetch('mythology.json')
+    fetch('manifest.json')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load JSON");
             return response.json();
