@@ -1,6 +1,6 @@
 const CACHE_NAME = 'mytho-v1';
 const ASSETS = [
-  './',                // The root URL (usually index.html)
+  '/cisc3610/pwa-project',                // The root URL (usually index.html)
   'index.html',      // Your main app structure
   'style.css',      // Your visual design (styling)
   'app.js',          // Your core logic (the engine)
