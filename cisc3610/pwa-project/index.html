@@ -12,9 +12,14 @@
 </head>
 
 <body>
-	<button class="back-btn" style="vertical-align:middle" onclick="window.location.href='../'"><span>Back</span></button>
+	<nav class="navbar">
+		<button onclick="window.history.back()" class="back-btn">← Back</button>
+		<h1 class="nav-title">Mythology PWA</h1>
+	</nav>
+
+	<div class="wrapper">
+	</div>
 	<header class="app-header">
-		<h1>Mythology PWA Project</h1>
 		<select id="myth-selector">
 			<option selected disabled>Select a Chapter...</option>
 		</select>
