@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 5px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
 }
 
@@ -228,4 +228,27 @@ h1 {
 
 .content-card h2 {
     margin-top: 0;
+}
+
+.navbar {
+    position: fixed;   /* Sticks it to the screen */
+    top: 0;            /* Forces it to the very top */
+    left: 0;
+    width: 100%;       /* Spans the full width */
+    height: 60px;
+    background-color: rgba(26, 26, 26, 0.95); /* Semi-transparent for style */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;     /* Ensures it stays ABOVE the content */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+/* IMPORTANT: Because the navbar is fixed, it doesn't take up space anymore. 
+   We must add a margin or padding to the top of our wrapper so the 
+   top of our content isn't hidden behind the navbar. */
+.wrapper {
+    margin-top: 80px; /* Should be slightly more than your navbar height */
+    padding: 20px;
 }
