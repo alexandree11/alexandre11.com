@@ -18,7 +18,7 @@
 		{
 			"id": "myth-001",
 			"title": "The creation myth",
-			"description": "the creation of humanity"
+			"description": "Cosmogonies and theogonies"
 		},
 		{
 			"id": "myth-002",
@@ -27,6 +27,16 @@
 		},
 		{
 			"id": "myth-003",
+			"title": "Flood myths",
+			"description": "Myths about flood"
+		},
+		{
+			"id": "myth-004",
+			"title": "Flood myths",
+			"description": "Myths about flood"
+		},
+		{
+			"id": "myth-005",
 			"title": "Flood myths",
 			"description": "Myths about flood"
 		}

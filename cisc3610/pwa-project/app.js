@@ -37,7 +37,6 @@ function renderMythology(mythologyArray) {
                 <h2>${myth.title}</h2>
                 <img src="${myth.image}" alt="${myth.title}" style="width: 100%;">
                 <p>${myth.description}</p>
-                <audio controls src="${myth.audio}"></audio>
             `;
         });
         
