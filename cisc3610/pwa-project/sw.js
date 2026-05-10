@@ -4,7 +4,7 @@ const ASSETS_TO_CACHE = [
   '/index.html',
   '/style.css',
   '/app.js',
-  '/data.json',
+  '/mythology.json',
   '/assets/images/xaxa-icon-192.png',
   '/assets/images/xaxa-icon-512.png',
   '/assets/images/achilles-skyros.png.png',
