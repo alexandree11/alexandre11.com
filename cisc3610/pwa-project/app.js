@@ -1,45 +1,57 @@
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js')
-      .then(reg => console.log('Service Worker registered!', reg))
-      .catch(err => console.log('Service Worker registration failed:', err));
-  });
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registered!', reg))
+            .catch(err => console.log('Service Worker registration failed:', err));
+    });
 }
-// 1. Wait for the page to load before running scripts
+
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 2. Fetch the JSON data
     fetch('mythology.json')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load JSON");
             return response.json();
         })
         .then(data => {
-            // 3. Populate your menu and main content area
             renderMythology(data.mythology);
         })
         .catch(error => console.error("Error loading mythology data:", error));
 });
 
 function renderMythology(mythologyArray) {
-    const menu = document.getElementById('menu-list');
+    const selector = document.getElementById('myth-selector');
     const displayArea = document.getElementById('myth-display');
 
     mythologyArray.forEach((myth, index) => {
-        // Create menu items
-        const listItem = document.createElement('li');
-        listItem.textContent = myth.title;
-        listItem.className = 'menu-item';
-        
-        // Add click event to show myth details
-        listItem.addEventListener('click', () => {
-            displayArea.innerHTML = `
-                <h2>${myth.title}</h2>
-                <img src="${myth.image}" alt="${myth.title}" style="width: 100%;">
-                <p>${myth.description}</p>
-            `;
-        });
-        
-        menu.appendChild(listItem);
+        const opt = document.createElement('option');
+        opt.value = index;
+        opt.textContent = myth.title;
+        selector.appendChild(opt);
+    });
+
+    selector.addEventListener('change', (e) => {
+        const myth = mythologyArray[e.target.value];
+
+        // Update Content
+        // Note: I added a check for audio. If your myth doesn't have audio yet, this prevents a broken player.
+        displayArea.innerHTML = `
+            <h2>${myth.title}</h2>
+            <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
+            <p>${myth.description}</p>
+            ${myth.audio ? `<audio controls src="${myth.audio}"></audio>` : ''}
+        `;
+
+        // Apply Custom Visuals from JSON
+        document.body.style.backgroundColor = myth.bgColor;
+        document.body.style.color = myth.textColor;
+
+        // Match the card background
+        displayArea.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+
+        // Sync the PWA theme color
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta) {
+            themeMeta.setAttribute('content', myth.bgColor);
+        }
     });
 }
