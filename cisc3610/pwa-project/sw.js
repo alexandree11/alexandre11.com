@@ -5,7 +5,13 @@ const ASSETS_TO_CACHE = [
   '/style.css',
   '/app.js',
   '/data.json',
-  '/assets/icon-192.png' // Add your specific images here
+  '/assets/images/xaxa-icon-192.png',
+  '/assets/images/xaxa-icon-512.png',
+  '/assets/images/achilles-skyros.png.png',
+  '/assets/images/cosmogonies-theogonies.png',
+  '/assets/images/creation-of-mankind.png',
+  '/assets/images/death-orpheus.png',
+  '/assets/images/epic-struggles.png' // Add your specific images here
 ];
 
 // 1. INSTALL: Save files to cache
