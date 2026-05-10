@@ -1,0 +1,29 @@
+{
+	"mythology": [
+		{
+			"id": "myth-001",
+			"title": "The creation myth",
+			"description": "Cosmogonies and theogonies"
+		},
+		{
+			"id": "myth-002",
+			"title": "Love and Death",
+			"description": "Myths about love and death"
+		},
+		{
+			"id": "myth-003",
+			"title": "Flood myths",
+			"description": "Myths about flood"
+		},
+		{
+			"id": "myth-004",
+			"title": "Flood myths",
+			"description": "Myths about flood"
+		},
+		{
+			"id": "myth-005",
+			"title": "Flood myths",
+			"description": "Myths about flood"
+		}
+	]
+}

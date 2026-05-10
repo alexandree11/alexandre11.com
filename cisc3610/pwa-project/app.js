@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
 document.addEventListener('DOMContentLoaded', () => {
     
     // 2. Fetch the JSON data
-    fetch('manifest.json')
+    fetch('mythology.json')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load JSON");
             return response.json();
@@ -43,14 +43,3 @@ function renderMythology(mythologyArray) {
         menu.appendChild(listItem);
     });
 }
-
-self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches.keys().then(keys => {
-      return Promise.all(
-        keys.filter(key => key !== CACHE_NAME)
-            .map(key => caches.delete(key))
-      );
-    })
-  );
-});

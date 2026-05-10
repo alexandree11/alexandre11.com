@@ -1,21 +1,39 @@
-const CACHE_NAME = 'mytho-v1';
-const ASSETS = [
-  '/cisc3610/pwa-project',                // The root URL (usually index.html)
-  'index.html',      // Your main app structure
-  'style.css',      // Your visual design (styling)
-  'app.js',          // Your core logic (the engine)
-  'manifest.json',   // Your PWA metadata (icons, colors, etc)
-  // ... your media below
+const CACHE_NAME = 'myth-app-v1';
+const ASSETS_TO_CACHE = [
+  '/',
+  '/index.html',
+  '/style.css',
+  '/app.js',
+  '/data.json',
+  '/assets/icon-192.png' // Add your specific images here
 ];
 
-// Install event: Cache the assets
+// 1. INSTALL: Save files to cache
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(ASSETS_TO_CACHE);
+    })
+  );
 });
 
-// Fetch event: Serve from cache if offline
+// 2. ACTIVATE: (Your existing code)
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(key => key !== CACHE_NAME)
+            .map(key => caches.delete(key))
+      );
+    })
+  );
+});
+
+// 3. FETCH: Serve from cache if offline
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then(response => response || fetch(event.request))
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
