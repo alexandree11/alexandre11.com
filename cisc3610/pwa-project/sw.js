@@ -1,18 +1,18 @@
 const CACHE_NAME = 'myth-app-v1';
 const ASSETS_TO_CACHE = [
   '/cisc3610/pwa-project',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/mythology.json',
-  '/manifest.json',
-  '/assets/images/xaxa-icon-192.png',
-  '/assets/images/xaxa-icon-512.png',
-  '/assets/images/achilles-skyros.png.png',
-  '/assets/images/cosmogonies-theogonies.png',
-  '/assets/images/creation-of-mankind.png',
-  '/assets/images/death-orpheus.png',
-  '/assets/images/epic-struggles.png' // Add your specific images here
+  'index.html',
+  'style.css',
+  'app.js',
+  'mythology.json',
+  'manifest.json',
+  'assets/images/xaxa-icon-192.png',
+  'assets/images/xaxa-icon-512.png',
+  'assets/images/achilles-skyros.png',
+  'assets/images/cosmogonies-theogonies.png',
+  'assets/images/creation-of-mankind.png',
+  'assets/images/death-orpheus.png',
+  'assets/images/epic-struggles.png' // Add your specific images here
 ];
 
 // 1. INSTALL: Save files to cache
