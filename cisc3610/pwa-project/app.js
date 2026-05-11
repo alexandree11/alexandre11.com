@@ -36,7 +36,7 @@ function renderMythology(mythologyArray) {
         // Note: I added a check for audio. If your myth doesn't have audio yet, this prevents a broken player.
         displayArea.innerHTML = `
             <h2>${myth.title}</h2>
-            <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto; text-center;">
+            <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
             <p>${myth.description}</p>
             <p>${myth.text}</p>
             ${myth.audio ? `<audio controls src="${myth.audio}"></audio>` : ''}
