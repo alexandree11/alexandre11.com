@@ -32,20 +32,22 @@ function renderMythology(mythologyArray) {
     selector.addEventListener('change', (e) => {
         const myth = mythologyArray[e.target.value];
 
-        // Update Content
-        // Note: I added a check for audio. If your myth doesn't have audio yet, this prevents a broken player.
-        displayArea.innerHTML = `
-            <h2>${myth.title}</h2>
-            <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
-            <p>${myth.description}</p>
-            <p>${myth.text}</p>
-            ${myth.audio ? `<audio controls src="${myth.audio}"></audio>` : ''}
-        `;
-
-        // Apply Custom Visuals from JSON
-        document.body.style.backgroundColor = myth.bgColor;
-        document.body.style.color = myth.textColor;
-
+        fetch(myth.textFile)
+            .then(response => response.text())
+            .then(mythText => {
+                // Update Content
+                // ADD AUDIO TTS
+                displayArea.innerHTML = `
+                    <h2>${myth.title}</h2>
+                    <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
+                    <p>${myth.description}</p>
+                    <p>${myth.mythText}<p>
+                    ${myth.audio ? `<audio controls src="${myth.audio}"></audio>` : ''}
+                `;
+                // Apply Custom Visuals from JSON
+                document.body.style.backgroundColor = myth.bgColor;
+                document.body.style.color = myth.textColor;
+            });
         // Match the card background
         displayArea.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
 
