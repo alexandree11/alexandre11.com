@@ -5,36 +5,40 @@
 			"title": "Cosmogonies and theogonies",
 			"description": "Cosmogonies and theogonies",
 			"text": "assets/texts/myth-001.txt",
-      "image": "assets/images/cosmogonies-theogonies.png",
-      "audio": "assets/audio/"
+			"image": "assets/images/cosmogonies-theogonies.png",
+			"audio": "assets/audio/"
 		},
 		{
 			"id": "myth-002",
 			"title": "The creation of mankind",
 			"description": "Mankind created, mankind destroyed",
-            "image": "assets/images/creation-of-mankind.png",
-            "audio": "assets/audio/"
+			"text": "assets/texts/myth-002.txt",
+			"image": "assets/images/creation-of-mankind.png",
+			"audio": "assets/audio/"
 		},
 		{
 			"id": "myth-003",
 			"title": "Epic Struggles",
 			"description": "The exploits of Perseus, Herakles and Theseus",
-            "image": "assets/images/epic-struggles.png",
-            "audio": "assets/audio/"
+			"text": "assets/texts/myth-003.txt",
+			"image": "assets/images/epic-struggles.png",
+			"audio": "assets/audio/"
 		},
 		{
 			"id": "myth-004",
 			"title": "Love",
 			"description": "Achilles at Skyros",
-            "image": "assets/images/achilles-skyros.png",
-            "audio": "assets/audio/"
+			"text": "assets/texts/myth-004.txt",
+			"image": "assets/images/achilles-skyros.png",
+			"audio": "assets/audio/"
 		},
 		{
 			"id": "myth-005",
 			"title": "Death",
 			"description": "Orpheus and Eurydice",
-            "image": "assets/images/death-orpheus.png",
-            "audio": "assets/audio/"
+			"text": "assets/texts/myth-005.txt",
+			"image": "assets/images/death-orpheus.png",
+			"audio": "assets/audio/"
 		}
 	]
 }
