@@ -33,7 +33,10 @@ function renderMythology(mythologyArray) {
         const myth = mythologyArray[e.target.value];
 
         fetch(myth.textFile)
-            .then(response => response.text())
+            .then(response => {
+                if(!response.ok) throw new Error("Text file not found");
+                return response.text()
+                })
             .then(mythText => {
                 // Update Content
                 // ADD AUDIO TTS
@@ -41,7 +44,7 @@ function renderMythology(mythologyArray) {
                     <h2>${myth.title}</h2>
                     <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
                     <p>${myth.description}</p>
-                    <p>${myth.mythText}<p>
+                    <p>${mythText}<p>
                     ${myth.audio ? `<audio controls src="${myth.audio}"></audio>` : ''}
                 `;
                 // Apply Custom Visuals from JSON
