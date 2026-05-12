@@ -6,7 +6,7 @@
 			"description": "Cosmogonies and theogonies",
 			"text": "assets/texts/myth-001.txt",
 			"image": "assets/images/cosmogonies-theogonies.png",
-			"audio": "assets/audio/"
+			"audio": "assets/audio/myth-001.mp3"
 		},
 		{
 			"id": "myth-002",
@@ -14,7 +14,7 @@
 			"description": "Mankind created, mankind destroyed",
 			"text": "assets/texts/myth-002.txt",
 			"image": "assets/images/creation-of-mankind.png",
-			"audio": "assets/audio/"
+			"audio": "assets/audio/myth-002.mp3"
 		},
 		{
 			"id": "myth-003",
@@ -22,7 +22,7 @@
 			"description": "The exploits of Perseus, Herakles and Theseus",
 			"text": "assets/texts/myth-003.txt",
 			"image": "assets/images/epic-struggles.png",
-			"audio": "assets/audio/"
+			"audio": "assets/audio/myth-003.mp3"
 		},
 		{
 			"id": "myth-004",
@@ -30,7 +30,7 @@
 			"description": "Achilles at Skyros",
 			"text": "assets/texts/myth-004.txt",
 			"image": "assets/images/achilles-skyros.png",
-			"audio": "assets/audio/"
+			"audio": "assets/audio/myth-004.mp3"
 		},
 		{
 			"id": "myth-005",
@@ -38,7 +38,7 @@
 			"description": "Orpheus and Eurydice",
 			"text": "assets/texts/myth-005.txt",
 			"image": "assets/images/death-orpheus.png",
-			"audio": "assets/audio/"
+			"audio": "assets/audio/myth-005.mp3"
 		}
 	]
 }
