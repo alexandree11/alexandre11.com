@@ -35,7 +35,7 @@ function renderMythology(mythologyArray) {
         fetch(myth.textFile)
             .then(response => {
                 if(!response.ok) throw new Error("Text file not found");
-                return response.text()
+                return response.text();
                 })
             .then(mythText => {
                 // Update Content
