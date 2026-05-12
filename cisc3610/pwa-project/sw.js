@@ -5,14 +5,19 @@ const ASSETS_TO_CACHE = [
   'style.css',
   'app.js',
   'mythology.json',
-  'manifest.json',
+  'manifest.json',    // ADD EVERY FILE FROM ASSETS
   'assets/images/xaxa-icon-192.png',
   'assets/images/xaxa-icon-512.png',
   'assets/images/achilles-skyros.png',
   'assets/images/cosmogonies-theogonies.png',
   'assets/images/creation-of-mankind.png',
   'assets/images/death-orpheus.png',
-  'assets/images/epic-struggles.png' // Add your specific images here
+  'assets/images/epic-struggles.png',
+  'assets/texts/myth-001.txt',
+  'assets/texts/myth-002.txt',
+  'assets/texts/myth-003.txt',
+  'assets/texts/myth-004.txt',
+  'assets/texts/myth-005.txt'
 ];
 
 // 1. INSTALL: Save files to cache
