@@ -32,7 +32,7 @@ function renderMythology(mythologyArray) {
     selector.addEventListener('change', (e) => {
         const myth = mythologyArray[e.target.value];
 
-        fetch(myth.textFile)
+        fetch(myth.text)
             .then(response => {
                 if(!response.ok) throw new Error("Text file not found");
                 return response.text();
