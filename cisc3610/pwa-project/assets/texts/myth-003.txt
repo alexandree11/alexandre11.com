@@ -1,13 +1,12 @@
-myth-003 contents
-text
-text
-text
-text
-text
-text
-text
-text
-text
-text
-text
-text
+<b>Perseus and Medusa</b>
+For centuries, the myth of Perseus and Medusa (Medousa) has thrilled readers with its famed hero who conquers the Gorgon and harnesses the force of her petrifying gaze. Showcasing a mysterious quest, high adventure, and even romance, the story evolved in ancient versions and continues to fascinate audiences, with countless representations in poetry, prose, and especially the visual arts.
+
+Originating in ancient Greece around 700 BCE, two of the story’s most developed versions survive in the Bibliotheca (The Library of Greek Mythology), once attributed to the Greek grammarian Apollodorus and now credited to a writer known as Pseudo-Apollodorus, and in the Roman poet Ovid’s Metamorphoses. Both writers lived during the first century BCE, and they tell of how Perseus embarks on a quest to find the snake-haired Medusa, one of the three Gorgons, when Perseus’s friend Polydectes (Polydektes) commands him to bring back her head. With the help of a diverse cast of gods, crones, and nymphs as well as the magic objects they bestow, Perseus decapitates the Gorgon by gazing only at her reflection in his shield. Then, he defeats his enemies in other exploits—most notably the rescue of Andromeda, a beautiful maiden whose father sacrifices her to a savage sea monster sent as divine punishment after his wife offends the sea nymphs. In exchange for her rescue, Andromeda is given to Perseus in marriage, and when her abandoned fiancé Phineus (Phineas) opposes the union, Perseus uses Medusa’s head to petrify him and his crew. The hero also turns Polydectes to stone when the ruler turns corrupt.
+
+The story in the Bibliotheca is chronological, beginning with Perseus’s birth and ending with the accidental death of the hero’s father, which an oracle had initially predicted. In contrast, Ovid begins with the rescue of Andromeda, after Perseus has already defeated Medusa, telling the story of the Gorgon’s defeat in retrospect when a wedding guest asks the hero to describe the deed. Ovid’s version also includes the story of Medusa’s transformation into the Gorgon and provides a different ending regarding Perseus’s father.
+
+Remarkably, monstrous Medusa has come to overshadow Perseus even though he is the story’s nominal hero. This shift partly results from how Ovid’s version diminishes the heroism of Perseus. Ovid is also unique in evoking sympathy for Medusa by telling the story of her rape, for which the goddess Minerva unjustly transforms her into the hideous Gorgon. Partly as a result of this important detail, Medusa in modern feminist interpretations has become, among many other things, a fascinating symbol of female power in the context of patriarchal cultures. A thematic interpretation explores how Ovid embeds the myth within a series of tales about the power of snakes, which emphasize the fascinating duality of the Medusa figure and snakes in general as sacred life givers and yet vicious destroyers. This thematic approach in turn invites readers to view Medusa within larger contexts of myth and anthropological studies, which demonstrate her likely ancestry in several ancient deities and show how she became linked increasingly with violence and death in ancient Greek culture.
+
+<b>Herakles and Hydra</b>
+
+<b>Theseus and Minotaur</b>
