@@ -199,7 +199,7 @@ h1.nav-title {
 
 .app-header {
     width: 100%;
-    padding-top: 7.5%;
+    padding-top: 65px;
     text-align: center;
     background: rgba(0, 0, 0, 0);
     font-family: sans-serif;
@@ -239,8 +239,8 @@ h1.nav-title {
 .navbar {
     position: fixed;   /* Sticks it to the screen */
     top: 0;            /* Forces it to the very top */
+    height: 60px;
     width: 100%;       /* Spans the full width */
-    background: #333;
     background-color: rgba(26, 26, 26, 0.95); /* Semi-transparent for style */
     display: flex;
     align-items: center;
