@@ -67,6 +67,7 @@ h1 {
 }
 
 .main-text {
+  margin-left: 1%;
   font-size: 20px;
   font-weight: 600;
   color: black;
