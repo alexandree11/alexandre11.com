@@ -72,9 +72,6 @@ function renderMythology(mythologyArray) {
                     <p class="story-body">${mythText}</p>
                 `;
 
-                // Handle background adjustments inside the card container
-                displayArea.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-
                 // Apply Custom Global Page Colors from JSON
                 document.body.style.backgroundColor = myth.bgColor;
                 document.body.style.color = myth.textColor;
