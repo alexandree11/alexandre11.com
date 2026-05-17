@@ -214,8 +214,8 @@ h1.nav-title {
 }
 
 .content-card {
-    width: 95%;
-    padding-top: 1%;
+    width: 93%;
+    padding: 1% 1.5%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
