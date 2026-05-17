@@ -73,7 +73,7 @@ function renderMythology(mythologyArray) {
                 `;
 
                 // Apply Custom Global Page Colors from JSON
-                document.body.style.backgroundColor = myth.bgColor;
+                // document.body.style.backgroundColor = myth.bgColor;
                 document.body.style.color = myth.textColor;
 
                 // Sync the PWA device theme color meta tag
