@@ -278,7 +278,6 @@ h1.nav-title {
    top of our content isn't hidden behind the navbar. */
 .wrapper {
   margin-top: 7.5%;
-  /* Should be slightly more than your navbar height */
   padding: 10px;
 }
 
