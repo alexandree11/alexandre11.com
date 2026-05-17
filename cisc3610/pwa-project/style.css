@@ -307,6 +307,6 @@ h1.nav-title {
 
 /* Disabled button utility layout treatment */
 #audio-controls button:disabled {
-  opacity: 0.5;
+  opacity: 0.75;
   cursor: not-allowed;
 }
