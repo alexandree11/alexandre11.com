@@ -12,7 +12,7 @@ body {
   padding: 0;
 
   /* Set your single background image globally here */
-  background-image: url('assets/images/main-background.png');
+  /* background-image: url('assets/images/main-background.png'); */
 
   /* Keep it looking perfect on all screens */
   background-size: cover;
