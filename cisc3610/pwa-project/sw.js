@@ -13,6 +13,7 @@ const ASSETS_TO_CACHE = [
   'assets/images/creation-of-mankind.png',
   'assets/images/death-orpheus.png',
   'assets/images/epic-struggles.png',
+  'assets/images/main-background.png',
   'assets/texts/myth-001.txt',
   'assets/texts/myth-002.txt',
   'assets/texts/myth-003.txt',
