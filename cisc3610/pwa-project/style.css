@@ -239,9 +239,9 @@ h1.nav-title {
   background-color: #f2e5c4;
   background-image: linear-gradient(90deg, rgba(140, 107, 61, 0.15) 1px, transparent 1px),
     linear-gradient(0deg, rgba(140, 107, 61, 0.15) 1px, transparent 1px),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%,
-      transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%,
-      transparent 75%, transparent);
+    linear-gradient(117deg, rgba(254, 255, 255, 0.3) 21%, transparent 27%,
+      transparent 42%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%,
+      transparent 87%, transparent);
   box-shadow: inset 0 0 30px rgba(94, 69, 39, 0.25), 0 4px 15px rgba(0, 0, 0, 0.2);
   font-family: fantasy;
   color: #2b2013;
