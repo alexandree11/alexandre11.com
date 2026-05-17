@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     /* The image file */
-    background-image: url('myth_background.png');
+    background-image: url('images/myth_background.png');
     
     /* This makes it a full-screen background */
     background-size: cover;
@@ -24,17 +24,6 @@ body {
     /* Ensures the background covers everything */
     background-color: #f5f5f5; 
     font-family: 'Georgia', serif;
-}
-
-/* Навигация */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1000;
 }
 
 .navbar a {
