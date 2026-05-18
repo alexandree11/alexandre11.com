@@ -310,5 +310,4 @@ h1.nav-title {
     sizes and thickness should be changed in the main blocks of this classes */
 .content-card, .content-card h2, h1.nav-title, .page-title {
   font-family: 'Cinzel', serif;
-  font-style: italic;
 }

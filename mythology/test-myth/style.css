@@ -43,7 +43,6 @@ body {
     scroll-margin-top: 60px;
     /* Корректировка точки остановки скролла */
     font-family: 'Cinzel', serif;
-    font-style: italic;
 }
 
 .content-block img {
