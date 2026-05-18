@@ -43,6 +43,7 @@ body {
     scroll-margin-top: 60px;
     /* Корректировка точки остановки скролла */
     font-family: 'Cinzel', serif;
+    font-weight: 400;
 }
 
 .content-block img {
@@ -110,6 +111,6 @@ body {
 
 .content-block h2 {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 33px;
 }
