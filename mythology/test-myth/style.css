@@ -8,22 +8,23 @@ body {
     font-family: sans-serif;
     /* The image file */
     background-image: url('images/myth_background.png');
-    
+
     /* This makes it a full-screen background */
     background-size: cover;
-    
+
     /* This centers the image */
     background-position: center;
-    
+
     /* The trick for the "slow" scroll effect */
     background-attachment: scroll;
-    
+
     /* Prevents the image from repeating */
     background-repeat: no-repeat;
-    
+
     /* Ensures the background covers everything */
-    background-color: #f5f5f5; 
+    background-color: #f5f5f5;
     font-family: 'Georgia', serif;
+    font-size: 20px;
 }
 
 .navbar a {
@@ -35,10 +36,14 @@ body {
 
 /* Блоки контента */
 .content-block {
-    padding-top: 80px;    /* Отступ от верха, чтобы контент не был под меню */
-    max-width: 800px;
+    padding-top: 80px;
+    /* Отступ от верха, чтобы контент не был под меню */
+    max-width: 60%;
     margin: 0 auto 50px auto;
-    scroll-margin-top: 60px;    /* Корректировка точки остановки скролла */
+    scroll-margin-top: 60px;
+    /* Корректировка точки остановки скролла */
+    font-family: 'Cinzel', serif;
+    font-style: italic;
 }
 
 .content-block img {
@@ -48,10 +53,15 @@ body {
 }
 
 .text-container {
-    background: white;    /* Фон для текста */
+    background-color: #f2e5c4;
+    background-image: linear-gradient(90deg, rgba(140, 107, 61, 0.15) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(140, 107, 61, 0.15) 1px, transparent 1px),
+        linear-gradient(117deg, rgba(254, 255, 255, 0.3) 21%, transparent 27%,
+            transparent 42%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%,
+            transparent 87%, transparent);
+    box-shadow: inset 0 0 30px rgba(94, 69, 39, 0.25), 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* back button settings */
@@ -71,20 +81,25 @@ body {
 
 /* Стили вашей кнопки */
 .back-btn {
-    background-color: transparent;    /* Убираем фон */
-    border: 1px solid white;    /* Рамка */
-    color: white;    /* Цвет текста */
+    background-color: transparent;
+    /* Убираем фон */
+    border: 1px solid white;
+    /* Рамка */
+    color: white;
+    /* Цвет текста */
     padding: 8px 16px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
     transition: 0.3s;
-    margin-right: auto;    /* Прижимает кнопку к левому краю */
+    margin-right: auto;
+    /* Прижимает кнопку к левому краю */
 }
 
 .back-btn:hover {
     background-color: white;
-    color: #333;    /* Эффект при наведении */
+    color: #333;
+    /* Эффект при наведении */
 }
 
 /* Ссылки справа */
@@ -92,4 +107,10 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+}
+
+.content-block h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
 }
