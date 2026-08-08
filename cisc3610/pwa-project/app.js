@@ -67,7 +67,6 @@ function renderMythology(mythologyArray) {
                 displayArea.innerHTML = `
                     <h2>${myth.title}</h2>
                     <img src="${myth.image}" alt="${myth.title}" style="max-width:100%; height:auto;">
-                    <p>${myth.description}</p>
                     <hr>
                     <p class="story-body">${mythText}</p>
                 `;
