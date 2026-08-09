@@ -1,3 +1,6 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
 html,
 body {
   height: auto;
@@ -7,11 +10,12 @@ body {
 }
 
 body {
-  font-family: "Roboto", Helvetica, sans-serif;;
+  font-family: "Roboto", Helvetica, sans-serif;
+  ;
   font-weight: bold;
 }
 
-      /* Animated backround settings */
+/* Animated backround settings */
 .main-background {
   position: fixed;
   width: 100%;
@@ -41,8 +45,14 @@ body {
   }
 }
 
-                              /* fonts settings */
-h1 {
+/* fonts settings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   color: rgb(0, 0, 0);
   text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
   font-size: 30px;
@@ -50,59 +60,58 @@ h1 {
 }
 
 a {
-    -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    color: #e44c65;
-    text-decoration: underline;
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #e44c65;
+  text-decoration: underline;
 }
 
 .navbar {
-    /* 1. Fixed positioning keeps it attached to the top */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55px; /* Итоговая высота панели */
+  /* 1. Fixed positioning keeps it attached to the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  /* Итоговая высота панели */
 
-    /* 2. Semi-transparent background color (dark glass variant) */
-    background-color: rgba(23, 24, 32, 0.1); 
+  /* 2. Semi-transparent background color (dark glass variant) */
+  background-color: rgba(23, 24, 32, 0.1);
 
-    /* 3. The magic matte blur effect */
-    -webkit-backdrop-filter: blur(12px); /* Safari support */
-    backdrop-filter: blur(12px);
+  /* 3. The magic matte blur effect */
+  -webkit-backdrop-filter: blur(12px);
+  /* Safari support */
+  backdrop-filter: blur(12px);
 
-    /* 4. Subtle glass border glow along the bottom */
-    border-bottom: 1px solid rgba(57, 57, 57, 0);
+  /* 4. Subtle glass border glow along the bottom */
+  border-bottom: 1px solid rgba(57, 57, 57, 0);
 
-    /* 5. МАСКА ПЛАВНОГО УГАСАНИЯ (FADE OUT) */
-    /* От 0px до 40px плашка полностью видна (black), а от 40px до 55px плавно уходит в 0% прозрачности (transparent) */
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 0px,
-        black 40px,
-        transparent 55px
-    );
-    mask-image: linear-gradient(
-        to bottom,
-        black 0px,
-        black 40px,
-        transparent 55px
-    );
+  /* 5. МАСКА ПЛАВНОГО УГАСАНИЯ (FADE OUT) */
+  /* От 0px до 40px плашка полностью видна (black), а от 40px до 55px плавно уходит в 0% прозрачности (transparent) */
+  -webkit-mask-image: linear-gradient(to bottom,
+      black 0px,
+      black 40px,
+      transparent 55px);
+  mask-image: linear-gradient(to bottom,
+      black 0px,
+      black 40px,
+      transparent 55px);
 
-    /* Flexbox layout alignment */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 24px;
-    z-index: 1000;
-    box-sizing: border-box;
+  /* Flexbox layout alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .nav-wrapper {
-    margin-top: 35px; /* 65px navbar height + 20px padding gap */
-    padding: 20px;
+  margin-top: 35px;
+  /* 65px navbar height + 20px padding gap */
+  padding: 20px;
 }
 
 .nav-title {
@@ -128,7 +137,7 @@ a {
   text-decoration: none;
 }
 
-                              /* back button settings */
+/* back button settings */
 .back-btn {
   display: inline-block;
   border-radius: 8px;
@@ -181,7 +190,7 @@ a {
   text-decoration: none;
 }
 
-                              /* card blocks settings */
+/* card blocks settings */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -220,7 +229,7 @@ a {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-                              /* cartoon project page settings */
+/* cartoon project page settings */
 #cartoon-canvas {
   /* Adding top and left margins */
   margin-top: 44px;
@@ -230,7 +239,7 @@ a {
   display: block;
 }
 
-                              /* mythology notes style */
+/* mythology notes style */
 .myth-notes {
   margin-top: auto;
   width: 100%;
@@ -238,93 +247,161 @@ a {
   display: block;
 }
 
-                              /* video player position settings */
+/* video player position settings */
 .video-container {
   display: flex;
-  justify-content: center; /* This centers the content horizontally */
-  width: 80%;             /* Ensures the container spans the full width */
+  justify-content: center;
+  /* This centers the content horizontally */
+  width: 80%;
+  /* Ensures the container spans the full width */
 }
 
 /* Banner */
 
-	#banner {
-		background-attachment: fixed;
-		background-position: center center;
-		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
-		position: relative;
-		text-align: center;
-		z-index: 21;
-    text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
-	}
+#banner {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21;
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
+}
 
-    #banner h1, #banner h2,
-    #banner h3, #banner h4, 
-    #banner h5, #banner h6,
-    #banner p {
-      color: rgb(0, 0, 0);
-    }
+#banner:before {
+  content: '';
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  width: 1%;
+}
 
-		#banner:before {
-			content: '';
-			display: inline-block;
-			height: 100vh;
-			vertical-align: middle;
-			width: 1%;
-		}
+#banner:after {
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
-		#banner:after {
-      content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+#banner .content {
+  display: inline-block;
+  margin-right: 1%;
+  max-width: 95%;
+  padding: 6em;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
 
-		#banner .content {
-			display: inline-block;
-			margin-right: 1%;
-			max-width: 95%;
-			padding: 6em;
-			position: relative;
-			text-align: center;
-			vertical-align: middle;
-			z-index: 1;
-		}
+#banner .content header {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-			#banner .content header {
-				display: inline-block;
-				vertical-align: middle;
-			}
+#banner .content header h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
 
-				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
-				}
+#banner .content header p {
+  margin: 0.5em 0 0 0;
+  top: 0;
+}
 
-				#banner .content header p {
-					margin: 0.5em 0 0 0;
-					top: 0;
-				}
+#banner .content .image {
+  border-radius: 100%;
+  display: inline-block;
+  height: 18em;
+  margin-left: 3em;
+  vertical-align: middle;
+  width: 18em;
+}
 
-			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
-			}
+#banner .content .image img {
+  border-radius: 100%;
+  display: block;
+  width: 100%;
+}
 
-				#banner .content .image img {
-					border-radius: 100%;
-					display: block;
-					width: 100%;
-				}
+body.is-touch #banner {
+  background-attachment: scroll;
+}
 
-	body.is-touch #banner {
-		background-attachment: scroll;
-	}
+.goto-next {
+  border: 0;
+  bottom: 0;
+  display: block;
+  height: 5em;
+  left: 50%;
+  margin: 0 0 0 -5em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10em;
+  white-space: nowrap;
+  width: 10em;
+  z-index: 1;
+}
+
+.goto-next:before {
+  background-image: url('/assets/arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: -0.75em 0 0 -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  z-index: 1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.spotlight {
+  .spotlight .goto-next {
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -moz-transition: -moz-transform 0.75s ease, opacity 1s ease-in;
+    -webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
+    -ms-transition: -ms-transform 0.75s ease, opacity 1s ease-in;
+    transition: transform 0.75s ease, opacity 1s ease-in;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
+
+  .spotlight.inactive .goto-next {
+    -moz-transform: translate(0, 1.5em);
+    -webkit-transform: translate(0, 1.5em);
+    -ms-transform: translate(0, 1.5em);
+    transform: translate(0, 1.5em);
+    opacity: 0;
+  }
+}
+
+child {
+  .spotlight .goto-next {
+    display: none;
+  }
+
+  #banner .goto-next {
+    height: 7em;
+  }
+}
