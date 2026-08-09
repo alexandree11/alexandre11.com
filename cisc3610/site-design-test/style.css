@@ -45,17 +45,6 @@ body {
   }
 }
 
-/* fonts settings */
-a {
-  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: #e44c65;
-  border-bottom: dotted 1px;
-  text-decoration: none;
-}
-
 .nav-bar .nav-links {
   /* 1. Fixed positioning keeps it attached to the top */
   position: fixed;
@@ -327,7 +316,7 @@ body.is-touch #banner {
   text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
 }
 
-/* font settings */
+/* --------------------------------- font settings --------------------------------- */
 h1,
 h2,
 h3,
@@ -402,4 +391,18 @@ pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0;
+}
+
+.nav-links a{
+  border-bottom: none;
+}
+
+a {
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #e44c65;
+  border-bottom: dotted 1px;
+  text-decoration: none;
 }
