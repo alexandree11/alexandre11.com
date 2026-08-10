@@ -260,7 +260,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 60vh;
+  /* padding-bottom: 60vh; */
   box-sizing: border-box;
 }
 
@@ -329,8 +329,8 @@ h5,
 h6 {
   color: #ffffff;
   font-weight: 300;
-  line-height: 1em;
-  margin: 0 0 1em 0;
+  line-height: 1.25em;
+  margin: 0 0 0 0;
 }
 
 h1 a,
@@ -412,6 +412,7 @@ a {
 }
 
 .list-style-dash {
-  list-style-type: "- ";
+  list-style-type: "－ ";
   padding-left: 1.2em;
+  text-align: left;
 }
