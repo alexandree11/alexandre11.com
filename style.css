@@ -246,7 +246,7 @@ body {
 }
 
 /* Banner */
-#banner {
+#home {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -264,7 +264,7 @@ body {
   box-sizing: border-box;
 }
 
-#banner .content {
+#home .content {
   display: inline-block;
   margin-right: 1%;
   max-width: 95%;
@@ -277,22 +277,22 @@ body {
   z-index: 11;
 }
 
-#banner .content header {
+#home .content header {
   display: inline-block;
   vertical-align: middle;
 }
 
-#banner .content header h2 {
+#home .content header h2 {
   font-size: 2.5em;
   margin: 0;
 }
 
-#banner .content header p {
+#home .content header p {
   margin: 0.5em 0 0 0;
   top: 0;
 }
 
-#banner .content .image {
+#home .content .image {
   border-radius: 100%;
   display: inline-block;
   height: 18em;
@@ -301,13 +301,13 @@ body {
   width: 18em;
 }
 
-#banner .content .image img {
+#home .content .image img {
   border-radius: 100%;
   display: block;
   width: 100%;
 }
 
-body.is-touch #banner {
+body.is-touch #home {
   background-attachment: scroll;
 }
 
