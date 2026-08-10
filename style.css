@@ -250,7 +250,7 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  min-height: 40vh;
+  height: 100vh;
   position: relative;
   text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
   z-index: 21;
@@ -269,7 +269,9 @@ body {
   margin-right: 1%;
   max-width: 95%;
   padding: 6em;
+  padding-top: 1em;
   position: relative;
+  transform: translateY(-60px);
   text-align: center;
   vertical-align: middle;
   z-index: 11;
@@ -309,15 +311,19 @@ body.is-touch #banner {
   background-attachment: scroll;
 }
 
-#one {
+#projects {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 80vh;
   position: relative;
   text-align: center;
   z-index: 21;
   text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.103);
+}
+
+#links{
+  min-height: 40vh;
 }
 
 /* --------------------------------- font settings --------------------------------- */
