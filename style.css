@@ -213,6 +213,9 @@ body {
 
   /* Optional: Add a soft shadow for depth */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  color: rgb(197, 197, 197);
+  text-decoration: none;
 }
 
 /* cartoon project page settings */
