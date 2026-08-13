@@ -478,7 +478,7 @@ a {
 .sec-divider-line{
   height: 2px;
   width: 80%;
-  max-width: 800px;
+  max-width: 85%;
   margin: 40px auto;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
   border: none;
