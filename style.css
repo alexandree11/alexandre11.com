@@ -469,7 +469,7 @@ a {
 
 /* MEDIA 576px */
 @media (max-width: 576px) {
-  #home .profile-photo{
+  #home .content .profile-photo{
     margin-left: 0; 
   }
 }
