@@ -245,6 +245,11 @@ body {
   /* Ensures the container spans the full width */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Home */
 #home {
   background-attachment: fixed;
@@ -420,4 +425,11 @@ a {
   list-style-type: "－ ";
   padding-left: 1.2em;
   text-align: left;
+}
+
+/* MEDIA */
+@media (min-width: 992px){
+  .edu-block{
+    margin-top: 3.5rem;
+  }
 }
