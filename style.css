@@ -327,7 +327,7 @@ body.is-touch #home {
 }
 
 #links {
-  min-height: 40vh;
+  min-height: 10vh;
 }
 
 /* --------------------------------- font settings --------------------------------- */
@@ -451,9 +451,27 @@ a {
   color: #e44c65;
 }
 
-#links .icons a{
+#links .icons a {
   border-bottom: none;
 }
+
+#links .copyright {
+  color: rgb(197, 197, 197);
+  font-size: 0.8em;
+  line-height: 1em;
+  margin: 2em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+#links .copyright li {
+  border-left: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- MEDIA ----- */
 
 /* MEDIA 1200px */
 @media (max-width: 1200px) {}
