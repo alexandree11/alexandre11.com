@@ -238,10 +238,10 @@ body {
 /* video player position settings */
 .video-container {
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 1%;
   justify-content: center;
-  /* This centers the content horizontally */
   width: 80%;
-  /* Ensures the container spans the full width */
 }
 
 img {
@@ -519,6 +519,13 @@ a {
 @media (max-width: 576px) {
   #home .content .profile-photo {
     margin: 4%;
+  }
+
+  .nav-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 1.2rem;
   }
 }
 

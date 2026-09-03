@@ -51,7 +51,6 @@ body {
   left: 0;
   width: 100%;
   height: 55px;
-  /* Итоговая высота панели */
 
   /* 2. Semi-transparent background color (dark glass variant) */
   background-color: rgba(23, 24, 32, 0.1);
@@ -64,8 +63,6 @@ body {
   /* 4. Subtle glass border glow along the bottom */
   border-bottom: 1px solid rgba(57, 57, 57, 0);
 
-  /* 5. МАСКА ПЛАВНОГО УГАСАНИЯ (FADE OUT) */
-  /* От 0px до 40px плашка полностью видна (black), а от 40px до 55px плавно уходит в 0% прозрачности (transparent) */
   -webkit-mask-image: linear-gradient(to bottom,
       black 0px,
       black 40px,
@@ -404,6 +401,11 @@ pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0;
+}
+
+.nav-title {
+  padding-top: .5rem;
+  font-size: 1.5rem;
 }
 
 .nav-links a {
