@@ -207,6 +207,10 @@ body {
   text-decoration: none;
 }
 
+.edu-block {
+  margin-top: 7rem;
+}
+
 /* cartoon project page settings */
 #cartoon-canvas {
   /* Adding top and left margins */
